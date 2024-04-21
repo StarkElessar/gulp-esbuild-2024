@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"target": "ES2017",
+		"module": "ESNext",
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"allowJs": true,
+		"noEmit": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"moduleResolution": "node",
+		"noImplicitAny": false
+	},
+	"include": [
+		"src/scripts/**/*.ts",
+		"builder/**/*.ts"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}

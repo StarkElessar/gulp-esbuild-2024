@@ -1,0 +1,9 @@
+.vscode
+.idea
+.temporary_cache
+
+dist
+node_modules
+bun.lockb
+package-lock.json
+builder/version.json

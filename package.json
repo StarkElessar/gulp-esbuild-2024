@@ -1,0 +1,42 @@
+{
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"lint:scss": "stylelint -c stylelint.config.js src/styles/**/*.scss --fix",
+		"gulp:dev": "bunx gulp --development",
+		"esbuild:dev": "bun builder/esbuild.ts --development",
+		"build": "bunx gulp build && bun builder/esbuild.ts"
+	},
+	"dependencies": {
+		"@archoleat/stylelint-config-extended-scss": "1.6.8",
+		"autoprefixer": "^10.4.19",
+		"browser-sync": "^3.0.2",
+		"chalk": "^5.3.0",
+		"esbuild-sass-plugin": "^3.2.0",
+		"gulp": "^5.0.0",
+		"gulp-esbuild": "^0.12.0",
+		"gulp-htmlmin": "^5.0.1",
+		"gulp-if": "^3.0.0",
+		"gulp-imagemin": "^9.0.0",
+		"gulp-newer": "^1.4.0",
+		"gulp-notify": "^4.0.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-pug": "^5.0.0",
+		"gulp-version-number": "^0.2.4",
+		"gulp-webp": "^5.0.0",
+		"postcss": "^8.4.38",
+		"postcss-sort-media-queries": "^5.2.0",
+		"stylelint": "16.3.1",
+		"stylelint-config-standard-scss": "13.1.0"
+	},
+	"devDependencies": {
+		"@types/browser-sync": "^2.29.0",
+		"@types/bun": "^1.1.0",
+		"@types/gulp": "^4.0.17",
+		"@types/gulp-htmlmin": "^1.3.36",
+		"@types/gulp-if": "^3.0.4",
+		"@types/gulp-imagemin": "^8.0.6",
+		"@types/node": "^20.12.7",
+		"@types/pug": "^2.0.10"
+	}
+}
